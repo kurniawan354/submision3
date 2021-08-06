@@ -1,0 +1,84 @@
+
+@media screen and (max-width: 576px) {
+    .text-header {
+        margin-top: 120px;
+        font-size: 20px;
+    }
+    .line span {
+        width: 100px;
+
+    }
+    .line h2{
+        margin-top: 20px;
+        font-size: 19px; 
+    }
+}
+@media screen and (min-width: 650px) {
+    .app-bar{
+        grid-template-columns: 1fr auto;
+        padding: 8px 32px;
+
+    }
+    .app-bar .app_bar__barnd h1 {
+        font-size: 1.5em;
+    }
+    .app-bar .app-bar__menu {
+        display: none;
+    }
+    .app-bar .app-bar__navigation {
+        position: static; 
+        width: 100%;
+    }
+    .app-bar .app-bar__navigation ul li {
+        display: inline-block;
+    }
+    .app-bar .app-bar__navigation ul li a {
+        display: inline-block;
+        width: 120px;
+        text-align: center;
+        margin: 0;
+    }
+       
+       
+    
+    .Restoran{
+        grid-template-columns: 1fr 1fr;
+
+    }
+    .resto{
+        grid-template-columns: auto 1fr;
+
+    }
+    .resto .resto__title {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .resto .resto__overview {
+        grid-column-start: 1;
+        grid-column-end: 3;
+
+    }
+@media screen and (min-width: 800px) {
+    .app-bar .app_bar__brand h1 {
+        font-size: 22px;
+    }
+    
+}
+@media screen and (min-width: 850px) {
+    .Restoran {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+  }
+  @media screen and (min-width: 1200px) {
+    .Restoran {
+        grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  @media screen and (min-width: 1600px) {
+    .Restoran {
+        grid-template-columns: repeat(5, 1fr);
+    }
+  }
+
+}
